@@ -5,7 +5,7 @@ import HomePrincipal from "./src/pages/HomePrincipal";
 
 export default function App() {
   return (
-     //<Home />  
+    // <Home />  
     //<Botones />
    // <BotonesV2 />
     <HomePrincipal />
