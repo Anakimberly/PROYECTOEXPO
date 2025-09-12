@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+//import HomePrincipal from "./src/pages/HomePrincipal";
+//import BotonesV2 from "./src/pages/BotonesV2";  
+import Botones from "./src/pages/Botones";
+// import Home from "./src/pages/Home";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>HOLA MUNDO</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <Home />  
+    <Botones />
+    //<BotonesV2 />
+    //<HomePrincipal />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
