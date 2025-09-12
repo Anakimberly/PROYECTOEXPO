@@ -1,7 +1,7 @@
 //import  Ionicons  from "@expo/vector-icons/FontAwesome";
 import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity } from "react-native";
 import CardBasico from "../componets/CardBasico";
-//import CardImg from "../componets/CardImg";
+import CardImg from "../componets/CardImg";
 //import CardV2 from "../componets/CardV2";
 
 export default function HomePrincipal () {
@@ -9,7 +9,7 @@ export default function HomePrincipal () {
     <View style={style.mainS}>
         <Text style ={style.title}> Pagina Principal </Text>
         <CardBasico/>
-      {/*<CardImg/>*/}
+      <CardImg/>
         {/*<CardV2/>*/}
     </View>
   );
@@ -18,7 +18,7 @@ export default function HomePrincipal () {
 const style = StyleSheet.create({
     mainS:{
         flex:1,
-        backgroundColor: '#aacac6ff',
+        backgroundColor: '#606398ff',
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeigth:44,
         padding: 50
     },
