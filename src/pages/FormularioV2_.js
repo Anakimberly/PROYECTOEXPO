@@ -7,7 +7,12 @@ export const FormularioV2_ = () => {
    <SafeAreaView style={ style.mainS}> 
    <ScrollView>
   <Text style={style.title}>FORMULARIO V2</Text>
+ 
   <View style={style.container}>
+     <TouchableOpacity style={style.cerrarBoton}>
+    <Ionicons name="close" size={24} color="#000" />
+
+  </TouchableOpacity>
     <Image source={{ uri: 'https://i.pinimg.com/474x/6d/5e/38/6d5e38d19bf4c0c9554b1e6beab75952.jpg'}} style={style.avatar} />
     <Text style={style.name}>Ana Kimberly</Text>
     <View style={style.InfoContainer}>
@@ -96,7 +101,7 @@ export const FormularioV2_ = () => {
       padding:10,
     },
      botonConIcono:{
-        backgroundColor: '#cae3f1ff',
+        backgroundColor: '#caf1caff',
         marginTop:10,
         flexDirection:'row',
         alignContent:'center',
@@ -113,5 +118,18 @@ export const FormularioV2_ = () => {
         color: '#000000ff',
         fontWeight: 'bold',
         textAlign: 'center'
+    },
+    cerrarBoton:{
+      position: 'absolute',
+      top: 10,
+      right: 10,
+      borderRadius: 50,
+      backgroundColor: '#ecececff',
+      width: 30,
+      height  : 30,
+      zIndex: 10,
+      justifyContent: 'center',
+      alignItems: 'center',
+      elevation: 3,
     },
   })
