@@ -55,7 +55,7 @@ export const ListaAlumnos = () => {
 const style = StyleSheet.create({ 
  mainS:{
         flex:1,
-        backgroundColor: '#b4aee9ff',
+        backgroundColor:'#b4aee9ff',
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight:44,
         // padding: 50
     },
