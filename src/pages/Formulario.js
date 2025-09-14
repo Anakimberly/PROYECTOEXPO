@@ -1,10 +1,12 @@
-import { Platform, StatusBar, StyleSheet,View } from "react-native"
+import { Platform, StatusBar, StyleSheet,SafeAreaView, Text,TextInput } from "react-native" ;
+
 export const Formulario = () => {
   return (
-    <View style={style.mainS}>
- <Text style ={style.title}> Pagina Principal </Text>
-         <CardBasico/>
-    </View>
+   <SafeAreaView style={ style.mainS}>
+   <Text>Nombre:</Text>
+<TextInput placeholder="Escribe tu nombre"/> 
+        
+    </SafeAreaView>
   )
   }
 
