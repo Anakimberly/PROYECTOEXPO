@@ -29,12 +29,25 @@ export const ListaAlumnos = () => {
                 </View>
 
                 ))}
-               
-
-                
 
             </ScrollView>
             {/* cierre de contenido (lista de alumnos)*/}
+            {/* navbar*/}
+            <View style={style.navbar}>
+                <View style={style.navItem}>
+                    <Ionicons name="home" size={24} color={'#000000ff'} />
+                    <Text style={style.navText}> Inicio</Text>
+                </View>
+                <View style={style.navItem}>
+                    <Ionicons name="save" size={24} color={'#000000ff'} />
+                    <Text style={style.navText}> Guardar</Text>
+                </View>
+                <View style={style.navItem}>
+                    <Ionicons name="person" size={24} color={'#000000ff'} />
+                    <Text style={style.navText}> Usuario</Text>
+                </View>
+                </View>
+            {/* fin de navbar */}
         </SafeAreaView>
     )
 }
@@ -111,6 +124,23 @@ const style = StyleSheet.create({
         color: '#000000ff',
         fontWeight: 'bold',
         textAlign: 'center'
+    },
+    navbar:{
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:'center',
+        height:70,
+        backgroundColor:'#ffffffff',
+        borderTopWidth:1,
+        // marginBottom:10,
+    },
+    navItem:{
+        alignItems:'center',
+    },
+    navText:{
+        fontSize:12,
+        color:'#000000ff',
+        marginTop:4,
     },
     
 
