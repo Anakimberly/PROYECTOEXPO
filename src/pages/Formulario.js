@@ -3,8 +3,11 @@ import { Platform, StatusBar, StyleSheet,SafeAreaView, Text,TextInput } from "re
 export const Formulario = () => {
   return (
    <SafeAreaView style={ style.mainS}> 
+   <Text style={style.title}>REGISTRO DE ALUMNO</Text>
    <Text style ={style.label}>Nombre:</Text>
 <TextInput style ={style.input} placeholder="Escribe tu nombre"/> 
+<Text style ={style.label}>Carrera:</Text>
+<TextInput editable={false} style ={style.input} placeholder="Escribe tu carrera"/> 
  <Text style ={style.label}>Descripcion:</Text>
 <TextInput multiline={true} numberOfLines={4} style ={[style.input,style.textArea]} placeholder="Describe tu personalidad"/> 
  <Text style ={style.label}>Correo Electronico:</Text>
@@ -22,10 +25,17 @@ export const Formulario = () => {
   const style = StyleSheet.create({
       mainS:{
           flex:1,
-          backgroundColor: '#f5f5f5ff',
+          backgroundColor: '#daf2daff',
           paddingTop: Platform.OS === 'android' ? StatusBar.currentHeigth:44,
           padding: 16
         },
+         title:{
+        paddingTop:30,
+        fontSize: 30,
+        fontWeight: 'bold',
+        marginTop: 20,
+        textAlign:'center'
+    },
         label:{
 fontWeight: 'bold',
 marginTop:10,
